@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Search Books</h2>
+<form method = "GET">
+    <input type ="text" name = "q" placeholder="Search Book, author or category">
+    <button type="submit">Search</button>
+</form>
+<table border ="1">
+        <tr>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    {% for b in books %}
+    <tr>
+        <td>{{ b.book_id }}</td>
+        <td>{{ b.book_name }}</td>
+        <td>{{ b.author }}</td>
+        <td>{{ b.category }}</td>
+        <td>{{ b.price }}</td>
+        <td>{{ b.quantity }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="6">No books found</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

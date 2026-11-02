@@ -1,0 +1,49 @@
+body {
+    background-color: aqua;
+    font-family: Arial;
+    text-align: center;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: navy;
+    padding: 20px;
+}
+
+nav a:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+h2 {
+    color: darkgoldenrod;
+    padding: 20px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+button {
+    background-color: red;
+    color: green;
+    padding: 20px;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
